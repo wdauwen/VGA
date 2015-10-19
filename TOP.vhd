@@ -39,14 +39,19 @@ entity TOP is
 end TOP;
 
 architecture Behavioral of TOP is
-signal clkdiv2 : STD_LOGIC;
+signal clkdiv2, hsdiv, vsdiv, screen, blank : STD_LOGIC;
 begin
 		clkdiv2: process(clk)
-				variable x : INTEGER := 0;
 				begin
 					if clk'event and clk = '1' then
 						clkdiv2 <= not clkdiv2;
 					end if;
+				end process;
+		hsdiv: process(clkdiv2)
+				begin
+				end process;
+		vsdiv: process ()
+				begin
 				end process;
 
 end Behavioral;
