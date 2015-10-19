@@ -47,9 +47,22 @@ begin
 						clkdiv2 <= not clkdiv2;
 					end if;
 				end process;
-		hsdiv: process(clkdiv2)
+				
+		hsdiv: process(clk)
+		variable x : INTEGER := 0;
 				begin
+					if clk'event and clk = '1' then
+						x := x + 1;
+						if x = 800 then
+							x := 0;
+							-- invert the wire
+							if en = '1' then
+								hsdiv <= not hsdiv;
+							end if;
+						end if;
+					
 				end process;
+				
 		vsdiv: process ()
 				begin
 				end process;
