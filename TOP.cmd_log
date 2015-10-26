@@ -2,3 +2,8 @@ xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.s
 xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
 xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
 xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
