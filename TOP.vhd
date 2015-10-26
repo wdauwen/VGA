@@ -92,7 +92,7 @@ begin
 						else 
 							vscreen <= '0';
 						end if;
-					end if
+					end if;
 				end if;
 		end process;
 end Behavioral;
