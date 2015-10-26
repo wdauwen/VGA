@@ -6,7 +6,7 @@
 -- Design Name: 
 -- Module Name:    TOP - Behavioral 
 -- Project Name: VGA
--- Target Devices: PARTAN 3-700A
+-- Target Devices: SPARTAN 3-700A
 -- Tool versions: ISE
 -- Description: 
 --
@@ -39,7 +39,7 @@ entity TOP is
 end TOP;
 
 architecture Behavioral of TOP is
-signal clkdiv2, hsdiv, vsdiv, screen, blank : STD_LOGIC;
+signal clkdiv2, hsdiv, vsdiv, hscreen, vscreen, blank, enable : STD_LOGIC;
 begin
 		clkdiv2: process(clk)
 				begin
@@ -55,19 +55,43 @@ begin
 						x := x + 1;
 						if x = 800 then
 							x := 0;
-							if x < 96 then
-								hso <= '0';
-							else hso <= '1';
-								if x > 112 and x < 752 then
-									x := 1;
-							end if;
 						end if;
+						if x < 96 then
+								hso <= '0';
+						else hso <= '1';
+						end if ;
+							
+						if x > 112 and x < 752 then
+							hscreen <= '1';
+						else 
+							hscreen <= '0';
+						end if;
+						if x := 799 then
+							enable <= '1';
+							else 
+							enable <= '0';
+									end if;		
 					end if;
 				end process;
 				
 		vsdiv: process ()
 				begin
-				end process;
-
+				if clk'event and clk = '1' then
+						x := x + 1;
+						if x = 521 then
+							x := 0;
+						end if;
+						if x < 2 then
+								vso <= '0';
+						else vso <= '1';
+						end if ;
+							
+						if x > 12 and x < 451 then
+							vscreen <= '1';
+						else 
+							vscreen <= '0';
+						end if;						
+				end if;
+		end process;
 end Behavioral;
 

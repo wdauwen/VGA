@@ -5,22 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="1202" delta="new" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. Redeclaration of symbol <arg fmt="%s" index="3">clkdiv2</arg>.
+<msg type="error" file="HDLParsers" num="1202" delta="old" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. Redeclaration of symbol <arg fmt="%s" index="3">clkdiv2</arg>.
 </msg>
 
-<msg type="error" file="HDLParsers" num="3313" delta="new" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">59</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">en</arg>&apos;.  Should it be: <arg fmt="%s" index="4">on or in</arg>?
+<msg type="error" file="HDLParsers" num="164" delta="old" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">63</arg>. <arg fmt="%s" index="3">parse error, unexpected AFFECT, expecting THEN</arg>
 </msg>
 
-<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">59</arg>. <arg fmt="%s" index="3">en</arg>: Undefined symbol (last report in this block)
+<msg type="error" file="HDLParsers" num="164" delta="old" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">69</arg>. <arg fmt="%s" index="3">parse error, unexpected IF, expecting PROCESS</arg>
 </msg>
 
-<msg type="error" file="HDLParsers" num="164" delta="new" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">64</arg>. <arg fmt="%s" index="3">parse error, unexpected PROCESS, expecting IF</arg>
+<msg type="error" file="HDLParsers" num="1202" delta="old" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">70</arg>. Redeclaration of symbol <arg fmt="%s" index="3">hsdiv</arg>.
 </msg>
 
-<msg type="error" file="HDLParsers" num="164" delta="new" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">66</arg>. <arg fmt="%s" index="3">parse error, unexpected PROCESS</arg>
-</msg>
-
-<msg type="warning" file="HDLParsers" num="901" delta="new" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">66</arg>. Label <arg fmt="%s" index="3">vsdiv</arg> is ignored.
+<msg type="error" file="HDLParsers" num="164" delta="old" >&quot;<arg fmt="%s" index="1">/home/student/VGA/TOP.vhd</arg>&quot; Line <arg fmt="%d" index="2">72</arg>. <arg fmt="%s" index="3">parse error, unexpected CLOSEPAR, expecting IDENTIFIER or STRING_LITERAL</arg>
 </msg>
 
 </messages>

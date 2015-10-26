@@ -27,6 +27,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TOP.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="TOP.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="TOP.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="TOP_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="TOP_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TOP_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="TOP_xst.xrpt"/>
@@ -64,9 +65,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445880897" xil_pn:in_ck="111671664259" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6202362547110700074" xil_pn:start_ts="1445880891">
+    <transform xil_pn:end_ts="1445889263" xil_pn:in_ck="111671664259" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6202362547110700074" xil_pn:start_ts="1445889257">
       <status xil_pn:value="FailedRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TOP.lso"/>
       <outfile xil_pn:name="TOP.prj"/>

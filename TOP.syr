@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: TOP.prj
@@ -108,19 +108,18 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/student/VGA/TOP.vhd" in Library work.
-Entity <TOP> compiled.
+Entity <top> compiled.
 ERROR:HDLParsers:1202 - "/home/student/VGA/TOP.vhd" Line 49. Redeclaration of symbol clkdiv2.
-ERROR:HDLParsers:3313 - "/home/student/VGA/TOP.vhd" Line 59. Undefined symbol 'en'.  Should it be: on or in?
-ERROR:HDLParsers:1209 - "/home/student/VGA/TOP.vhd" Line 59. en: Undefined symbol (last report in this block)
-ERROR:HDLParsers:164 - "/home/student/VGA/TOP.vhd" Line 64. parse error, unexpected PROCESS, expecting IF
-ERROR:HDLParsers:164 - "/home/student/VGA/TOP.vhd" Line 66. parse error, unexpected PROCESS
-WARNING:HDLParsers:901 - "/home/student/VGA/TOP.vhd" Line 66. Label vsdiv is ignored.
+ERROR:HDLParsers:164 - "/home/student/VGA/TOP.vhd" Line 63. parse error, unexpected AFFECT, expecting THEN
+ERROR:HDLParsers:164 - "/home/student/VGA/TOP.vhd" Line 69. parse error, unexpected IF, expecting PROCESS
+ERROR:HDLParsers:1202 - "/home/student/VGA/TOP.vhd" Line 70. Redeclaration of symbol hsdiv.
+ERROR:HDLParsers:164 - "/home/student/VGA/TOP.vhd" Line 72. parse error, unexpected CLOSEPAR, expecting IDENTIFIER or STRING_LITERAL
 --> 
 
 
-Total memory usage is 157832 kilobytes
+Total memory usage is 157916 kilobytes
 
 Number of errors   :    5 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
