@@ -55,12 +55,14 @@ begin
 						x := x + 1;
 						if x = 800 then
 							x := 0;
-							-- invert the wire
-							if en = '1' then
-								hsdiv <= not hsdiv;
+							if x < 96 then
+								hso <= '0';
+							else hso <= '1';
+								if x > 112 and x < 752 then
+									x := 1;
 							end if;
 						end if;
-					
+					end if;
 				end process;
 				
 		vsdiv: process ()

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
