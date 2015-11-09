@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:24:55 MDT 2013
+# Start of session at: Mon Nov  9 19:29:28 2015
+# Process ID: 3404
+# Log file: /home/student/VGA/planAhead_run_1/planAhead.log
+# Journal file: /home/student/VGA/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/student/VGA/pa.fromNetlist.tcl

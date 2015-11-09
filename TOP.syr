@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: TOP.prj
@@ -109,18 +109,18 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "/home/student/VGA/TOP.vhd" in Library work.
 Entity <top> compiled.
-Entity <TOP> (Architecture <Behavioral>) compiled.
+Entity <top> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <TOP> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <TOP> in library <work> (Architecture <behavioral>).
 INFO:Xst:2679 - Register <go> in unit <TOP> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <bo> in unit <TOP> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 Entity <TOP> analyzed. Unit <TOP> generated.
@@ -134,7 +134,6 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <TOP>.
     Related source file is "/home/student/VGA/TOP.vhd".
-WARNING:Xst:1780 - Signal <offscreen> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <hso>.
     Found 1-bit register for signal <vso>.
     Found 4-bit register for signal <ro>.
@@ -420,14 +419,14 @@ Offset:              5.698ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.07 secs
+Total CPU time to Xst completion: 4.18 secs
  
 --> 
 
 
-Total memory usage is 167912 kilobytes
+Total memory usage is 167936 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

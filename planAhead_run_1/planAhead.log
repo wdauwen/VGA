@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:24:55 MDT 2013
+# Start of session at: Mon Nov  9 19:29:28 2015
+# Process ID: 3404
+# Log file: /home/student/VGA/planAhead_run_1/planAhead.log
+# Journal file: /home/student/VGA/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/student/VGA/pa.fromNetlist.tcl
+# create_project -name VGA -dir "/home/student/VGA/planAhead_run_2" -part xc3s700afg484-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/student/VGA/TOP.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/student/VGA} }
+# set_property target_constrs_file "TOP.ucf" [current_fileset -constrset]
+Adding file '/home/student/VGA/TOP.ucf' to fileset 'constrs_1'
+# add_files [list {TOP.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s700afg484-4
+Release 14.7 - ngc2edif P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design TOP.ngc ...
+WARNING:NetListWriters:298 - No output is written to TOP.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus x0_mux0000<9 : 0> on block TOP is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus x_mux0000<9 : 5> on block TOP is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file TOP.edif ...
+ngc2edif: Total memory usage is 30692 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/VGA.data/cache/TOP_ngc_1fcc250e.edif]
+Finished Parsing EDIF File [./planAhead_run_2/VGA.data/cache/TOP_ngc_1fcc250e.edif]
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockBuffers.xml
+Loading package from /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/xc3s700a/fg484/Package.xml
+Loading io standards from /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/xc3s700a/fg484/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx-ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+Parsing UCF File [/home/student/VGA/TOP.ucf]
+Finished Parsing UCF File [/home/student/VGA/TOP.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 72c0a708
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1099.395 ; gain = 66.914
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See /home/student/VGA/planAhead_pid3404.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov  9 19:30:51 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

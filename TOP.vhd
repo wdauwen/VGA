@@ -39,7 +39,7 @@ entity TOP is
 end TOP;
 
 architecture Behavioral of TOP is
-signal clkdiv2, hscreen, vscreen, onscreen, offscreen, enable : STD_LOGIC;
+signal clkdiv2, hscreen, vscreen, onscreen, enable : STD_LOGIC;
 begin
 		P_clkdiv2: process(clk)
 				begin
@@ -100,12 +100,12 @@ begin
 		
 		figuur: process (clkdiv2)
 		begin
-			if clkdiv2'event and clkdiv2 = '1' then
-				if onscreen = '0' then
+			if clkdiv2'event and clkdiv2 = '1' then 	-- when onscreen red is emitted, offscreen black is emitted
+				if onscreen = '0' then 						--Black
 					ro <= "0000";
 					go <= "0000";
 					bo <= "0000";
-				else
+				else												--Red
 					ro <= "1111";
 					go <= "0000";
 					bo <= "0000";
