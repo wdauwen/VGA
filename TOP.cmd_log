@@ -64,3 +64,94 @@ map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map
 par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
 bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "/home/student/VGA/TOP.xst" -ofn "/home/student/VGA/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc3s700a-fg484-4 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 

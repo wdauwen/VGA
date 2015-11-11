@@ -33,13 +33,14 @@ entity TOP is
     Port ( clk : in  STD_LOGIC;
            hso : out  STD_LOGIC;
            vso : out  STD_LOGIC;
-           ro : out  STD_LOGIC_VECTOR (3 downto 0);
-           go : out  STD_LOGIC_VECTOR (3 downto 0);
-           bo : out  STD_LOGIC_VECTOR (3 downto 0));
+           ro : out  STD_LOGIC_VECTOR (3 downto 0):= "0000";
+           go : out  STD_LOGIC_VECTOR (3 downto 0):= "0000";
+           bo : out  STD_LOGIC_VECTOR (3 downto 0):= "0000");
 end TOP;
 
 architecture Behavioral of TOP is
 signal clkdiv2, hscreen, vscreen, onscreen, enable, xpos, ypos : STD_LOGIC;
+signal red, green, blue : STD_LOGIC_VECTOR (3 downto 0) := "0000";
 begin
 		P_clkdiv2: process(clk)
 				begin
@@ -99,18 +100,46 @@ begin
 		end process;
 		
 		figuur: process (clkdiv2)
+			variable xpos : natural range 0 to 300000000 := 0;
+			variable ypos :natural range 0 to 300000000 := 0;
 		begin
 			if clkdiv2'event and clkdiv2 = '1' then 	-- when onscreen red is emitted, offscreen black is emitted
-				if (xpos > 0 and xpos < 120 and ypos > 0 and ypos < 70 then
-					ro <= "0000";
-					go <= "1111";
-					bo <= "0000";
-				else 
-					ro <= "0000";
-					go <= "0000";
-					bo <= "0000";
-					
+				if onscreen = '1' then
+					xpos := xpos +1;
+				else
+					xpos := 0;
 				end if;
+				
+				if xpos = 639 then
+					ypos := ypos + 1;
+				end if;
+				if xpos < 320  and ypos < 240 then
+					red <= "0000";
+					green <= "1111";
+					blue <= "0000";
+				end if;
+				if xpos < 320  and ypos > 240 then
+					red <= "1111";
+					green <= "1111";
+					blue <= "0000";
+				end if;
+				if xpos > 320  and ypos > 240 then
+					red <= "0000";
+					green <= "1111";
+					blue <= "1111";
+				end if;
+				if xpos > 320  and ypos < 240 then
+					red <= "0000";
+					green <= "0000";
+					blue <= "1111";
+				end if;
+--				else 
+--					red <= "0000";
+--					green <= "0000";
+--					blue <= "1111";
+--				end if;
+				
+				-- when onscreen red is emitted, offscreen black is emitted
 				--if onscreen = '0' then 						--Black
 					--ro <= "0000";
 					--go <= "0000";
@@ -120,11 +149,15 @@ begin
 					--go <= "0000";
 					--bo <= "0000";
 				
-				--end if;	
+						--end if;		
 			end if;
 		end process;
 		
-		onscreen <= vscreen and hscreen; 
+		onscreen <= vscreen and hscreen;
+		ro <= red and onscreen&onscreen&onscreen&onscreen;
+		go <= green and onscreen&onscreen&onscreen&onscreen;
+		bo <= blue and onscreen&onscreen&onscreen&onscreen;
+		
 
 end Behavioral;
 
