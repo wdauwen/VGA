@@ -137,10 +137,10 @@ WARNING:Xst:1780 - Signal <xpos> is never used or assigned. This unconnected sig
     Found 1-bit register for signal <hso>.
     Found 1-bit register for signal <vso>.
     Found 4-bit register for signal <blue>.
-    Found 29-bit comparator greater for signal <blue$cmp_gt0000> created at line 131.
-    Found 29-bit comparator greater for signal <blue$cmp_gt0001> created at line 126.
-    Found 29-bit comparator less for signal <blue$cmp_lt0000> created at line 131.
-    Found 29-bit comparator less for signal <blue$cmp_lt0001> created at line 116.
+    Found 29-bit comparator greater for signal <blue$cmp_gt0000> created at line 134.
+    Found 29-bit comparator greater for signal <blue$cmp_gt0001> created at line 129.
+    Found 29-bit comparator less for signal <blue$cmp_lt0000> created at line 134.
+    Found 29-bit comparator less for signal <blue$cmp_lt0001> created at line 119.
     Found 1-bit register for signal <clkdiv2>.
     Found 1-bit register for signal <enable>.
     Found 4-bit register for signal <green>.
@@ -213,8 +213,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <green_0> in Unit <TOP> is equivalent to the following 3 FFs/Latches, which will be removed : <green_1> <green_2> <green_3> 
 INFO:Xst:2261 - The FF/Latch <blue_0> in Unit <TOP> is equivalent to the following 3 FFs/Latches, which will be removed : <blue_1> <blue_2> <blue_3> 
+INFO:Xst:2261 - The FF/Latch <green_0> in Unit <TOP> is equivalent to the following 3 FFs/Latches, which will be removed : <green_1> <green_2> <green_3> 
 INFO:Xst:2261 - The FF/Latch <red_0> in Unit <TOP> is equivalent to the following 3 FFs/Latches, which will be removed : <red_1> <red_2> <red_3> 
 
 Optimizing unit <TOP> ...
@@ -259,21 +259,21 @@ Design Statistics
 # IOs                              : 15
 
 Cell Usage :
-# BELS                             : 683
+# BELS                             : 714
 #      GND                         : 1
 #      INV                         : 16
 #      LUT1                        : 116
-#      LUT2                        : 24
+#      LUT2                        : 23
 #      LUT2_D                      : 1
-#      LUT3                        : 57
-#      LUT4                        : 103
+#      LUT3                        : 50
+#      LUT4                        : 142
 #      MULT_AND                    : 2
 #      MUXCY                       : 240
 #      VCC                         : 1
 #      XORCY                       : 122
 # FlipFlops/Latches                : 131
-#      FD                          : 61
-#      FDE                         : 63
+#      FD                          : 90
+#      FDE                         : 34
 #      FDR                         : 4
 #      FDRSE                       : 2
 #      FDSE                        : 1
@@ -289,9 +289,9 @@ Device utilization summary:
 
 Selected Device : 3s700afg484-4 
 
- Number of Slices:                      200  out of   5888     3%  
+ Number of Slices:                      201  out of   5888     3%  
  Number of Slice Flip Flops:            131  out of  11776     1%  
- Number of 4 input LUTs:                317  out of  11776     2%  
+ Number of 4 input LUTs:                348  out of  11776     2%  
  Number of IOs:                          15
  Number of bonded IOBs:                  15  out of    372     4%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -329,9 +329,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 13.532ns (Maximum Frequency: 73.899MHz)
+   Minimum period: 13.663ns (Maximum Frequency: 73.190MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 7.686ns
+   Maximum output required time after clock: 7.700ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -361,16 +361,16 @@ Delay:               1.907ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkdiv21'
-  Clock period: 13.532ns (frequency: 73.899MHz)
-  Total number of paths / destination ports: 79794 / 198
+  Clock period: 13.663ns (frequency: 73.190MHz)
+  Total number of paths / destination ports: 76789 / 170
 -------------------------------------------------------------------------
-Delay:               13.532ns (Levels of Logic = 38)
+Delay:               13.663ns (Levels of Logic = 38)
   Source:            xpos0_1 (FF)
-  Destination:       red_0 (FF)
+  Destination:       blue_0 (FF)
   Source Clock:      clkdiv21 rising
   Destination Clock: clkdiv21 rising
 
-  Data Path: xpos0_1 to red_0
+  Data Path: xpos0_1 to blue_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -394,7 +394,7 @@ Delay:               13.532ns (Levels of Logic = 38)
      MUXCY:CI->O           1   0.065   0.000  Madd_xpos0_addsub0000_cy<16> (Madd_xpos0_addsub0000_cy<16>)
      MUXCY:CI->O           1   0.065   0.000  Madd_xpos0_addsub0000_cy<17> (Madd_xpos0_addsub0000_cy<17>)
      XORCY:CI->O           2   0.844   0.590  Madd_xpos0_addsub0000_xor<18> (xpos0_addsub0000<18>)
-     LUT2:I0->O            1   0.648   0.423  ypos0_cmp_eq0000_wg_lut<1>_SW0 (N53)
+     LUT2:I0->O            1   0.648   0.423  ypos0_cmp_eq0000_wg_lut<1>_SW0 (N57)
      LUT4:I3->O            1   0.648   0.000  ypos0_cmp_eq0000_wg_lut<1> (ypos0_cmp_eq0000_wg_lut<1>)
      MUXCY:S->O            1   0.632   0.000  ypos0_cmp_eq0000_wg_cy<1> (ypos0_cmp_eq0000_wg_cy<1>)
      MUXCY:CI->O           1   0.065   0.000  ypos0_cmp_eq0000_wg_cy<2> (ypos0_cmp_eq0000_wg_cy<2>)
@@ -402,7 +402,7 @@ Delay:               13.532ns (Levels of Logic = 38)
      MUXCY:CI->O           1   0.065   0.000  ypos0_cmp_eq0000_wg_cy<4> (ypos0_cmp_eq0000_wg_cy<4>)
      MUXCY:CI->O           1   0.065   0.000  ypos0_cmp_eq0000_wg_cy<5> (ypos0_cmp_eq0000_wg_cy<5>)
      MUXCY:CI->O           1   0.065   0.000  ypos0_cmp_eq0000_wg_cy<6> (ypos0_cmp_eq0000_wg_cy<6>)
-     MUXCY:CI->O          44   0.141   1.269  ypos0_cmp_eq0000_wg_cy<7> (ypos0_cmp_eq0000)
+     MUXCY:CI->O          44   0.269   1.269  ypos0_cmp_eq0000_wg_cy<7> (ypos0_cmp_eq0000)
      LUT4:I3->O            1   0.648   0.000  Mcompar_blue_cmp_gt0001_lut<0> (Mcompar_blue_cmp_gt0001_lut<0>)
      MUXCY:S->O            1   0.632   0.000  Mcompar_blue_cmp_gt0001_cy<0> (Mcompar_blue_cmp_gt0001_cy<0>)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_blue_cmp_gt0001_cy<1> (Mcompar_blue_cmp_gt0001_cy<1>)
@@ -411,18 +411,18 @@ Delay:               13.532ns (Levels of Logic = 38)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_blue_cmp_gt0001_cy<4> (Mcompar_blue_cmp_gt0001_cy<4>)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_blue_cmp_gt0001_cy<5> (Mcompar_blue_cmp_gt0001_cy<5>)
      MUXCY:CI->O           1   0.065   0.000  Mcompar_blue_cmp_gt0001_cy<6> (Mcompar_blue_cmp_gt0001_cy<6>)
-     MUXCY:CI->O           4   0.269   0.667  Mcompar_blue_cmp_gt0001_cy<7> (Mcompar_blue_cmp_gt0001_cy<7>)
-     LUT2:I1->O            1   0.643   0.420  red_and00001 (red_and0000)
-     FDRSE:S                   0.869          red_0
+     MUXCY:CI->O           5   0.269   0.665  Mcompar_blue_cmp_gt0001_cy<7> (Mcompar_blue_cmp_gt0001_cy<7>)
+     LUT3:I2->O            1   0.648   0.420  blue_or00001 (blue_or0000)
+     FDRSE:S                   0.869          blue_0
     ----------------------------------------
-    Total                     13.532ns (9.600ns logic, 3.932ns route)
-                                       (70.9% logic, 29.1% route)
+    Total                     13.663ns (9.733ns logic, 3.930ns route)
+                                       (71.2% logic, 28.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv21'
   Total number of paths / destination ports: 38 / 14
 -------------------------------------------------------------------------
-Offset:              7.686ns (Levels of Logic = 2)
+Offset:              7.700ns (Levels of Logic = 2)
   Source:            vscreen (FF)
   Destination:       bo<3> (PAD)
   Source Clock:      clkdiv21 rising
@@ -431,23 +431,23 @@ Offset:              7.686ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             40   0.591   1.345  vscreen (vscreen)
+     FDE:C->Q             85   0.591   1.359  vscreen (vscreen)
      LUT3:I1->O            4   0.643   0.587  ro<1>1 (ro_1_OBUF)
      OBUF:I->O                 4.520          ro_3_OBUF (ro<3>)
     ----------------------------------------
-    Total                      7.686ns (5.754ns logic, 1.932ns route)
-                                       (74.9% logic, 25.1% route)
+    Total                      7.700ns (5.754ns logic, 1.946ns route)
+                                       (74.7% logic, 25.3% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.70 secs
+Total CPU time to Xst completion: 4.82 secs
  
 --> 
 
 
-Total memory usage is 170012 kilobytes
+Total memory usage is 170028 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

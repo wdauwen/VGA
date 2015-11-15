@@ -103,7 +103,7 @@ begin
 			variable xpos : natural range 0 to 300000000 := 0;
 			variable ypos :natural range 0 to 300000000 := 0;
 		begin
-			if clkdiv2'event and clkdiv2 = '1' then 	-- when onscreen red is emitted, offscreen black is emitted
+			if clkdiv2'event and clkdiv2 = '1' then 	
 				if onscreen = '1' then
 					xpos := xpos +1;
 				else
@@ -112,6 +112,9 @@ begin
 				
 				if xpos = 639 then
 					ypos := ypos + 1;
+				end if;
+				if vscreen = '0' then
+					ypos := 0;
 				end if;
 				if xpos < 320  and ypos < 240 then
 					red <= "0000";
@@ -133,23 +136,11 @@ begin
 					green <= "0000";
 					blue <= "1111";
 				end if;
---				else 
---					red <= "0000";
---					green <= "0000";
---					blue <= "1111";
---				end if;
-				
-				-- when onscreen red is emitted, offscreen black is emitted
-				--if onscreen = '0' then 						--Black
-					--ro <= "0000";
-					--go <= "0000";
-					--bo <= "0000";
-				--else												--Red
-					--ro <= "1111";
-					--go <= "0000";
-					--bo <= "0000";
-				
-						--end if;		
+				if onscreen = '0' then
+					red <= "1111";
+					green <= "0000";
+					blue <= "0000";
+				end if;
 			end if;
 		end process;
 		

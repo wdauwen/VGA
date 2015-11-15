@@ -9,7 +9,7 @@ Target Device  : xc3s700a
 Target Package : fg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 11 13:08:58 2015
+Mapped Date    : Sun Nov 15 20:27:06 2015
 
 Design Summary
 --------------
@@ -17,14 +17,14 @@ Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
   Number of Slice Flip Flops:           131 out of  11,776    1%
-  Number of 4 input LUTs:               199 out of  11,776    1%
+  Number of 4 input LUTs:               230 out of  11,776    1%
 Logic Distribution:
-  Number of occupied Slices:            180 out of   5,888    3%
-    Number of Slices containing only related logic:     180 out of     180 100%
-    Number of Slices containing unrelated logic:          0 out of     180   0%
+  Number of occupied Slices:            194 out of   5,888    3%
+    Number of Slices containing only related logic:     194 out of     194 100%
+    Number of Slices containing unrelated logic:          0 out of     194   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         318 out of  11,776    2%
-    Number used as logic:               199
+  Total Number of 4 input LUTs:         349 out of  11,776    2%
+    Number used as logic:               230
     Number used as a route-thru:        119
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -33,7 +33,7 @@ Logic Distribution:
   Number of bonded IOBs:                 15 out of     372    4%
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                2.18
+Average Fanout of Non-Clock Nets:                2.41
 
 Peak Memory Usage:  198 MB
 Total REAL time to MAP completion:  2 secs 
